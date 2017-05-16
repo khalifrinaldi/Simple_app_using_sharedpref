@@ -3,7 +3,7 @@
     <string name="name_user">Username</string>
     <string name="title_main">PO. MAJU PERUT</string>
     <string name="email_user">E-Mail</string>
-    <string name="register_text">Please fill this form first</string>
+    <string name="register_text">Please Register First</string>
     <string name="password_user">Password</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="title_menu">Hello</string>
@@ -14,6 +14,8 @@
     <string name="loc_prompt">Choose Location</string>
     <string name="bus_prompt">Choose Class</string>
     <string name="login_text">Sign In</string>
+    <string name="already_text">Already have account?</string>
+    <string name="splash_text">This is Splash Screen</string>
     <string-array name="location">
         <item>Jakarta</item>
         <item>Yogyakarta</item>

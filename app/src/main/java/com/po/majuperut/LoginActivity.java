@@ -1,8 +1,6 @@
 package com.po.majuperut;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -27,11 +25,27 @@ public class LoginActivity extends MainActivity {
                 final String username = sharedpreferences.getString(Username, null);
                 final String passname  = sharedpreferences.getString(Password, null);
 
-                Toast.makeText(LoginActivity.this,"Sorry this feature not ready yet",Toast.LENGTH_LONG).show();
+                if(userkey.getText().toString().length()==0){
+                    userkey.setError("Username not entered");
+                    userkey.requestFocus();
+                }
+                if(passkey.getText().toString().length()==0){
+                    passkey.setError("Password not entered");
+                    passkey.requestFocus();
+                }
+                else {
+                if(userkey.getText().toString().equals(username) && passkey.getText().toString().equals(passname))
+                {
 
-//                 Intent i = new  Intent(LoginActivity.this, MenuActivity.class);
-//                        startActivity(i);
+                 Intent i = new  Intent(LoginActivity.this, MenuActivity.class);
+                    Toast.makeText(LoginActivity.this, "Success", Toast.LENGTH_LONG).show();
+                        startActivity(i);
                     }
+                    else {
+                    Toast.makeText(LoginActivity.this, "Wrong Username / Password" , Toast.LENGTH_LONG).show();
+                }
+                }
+            }
         });
     }
 }

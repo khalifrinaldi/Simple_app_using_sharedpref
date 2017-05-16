@@ -2,7 +2,6 @@ package com.po.majuperut;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 
 public class Splash extends AppCompatActivity {
@@ -11,12 +10,19 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
 
-        int secondsDelayed = 1;
-        new Handler().postDelayed(new Runnable() {
+        Thread myThread = new Thread(){
+            @Override
             public void run() {
-                startActivity(new Intent(Splash.this, MainActivity.class));
-                finish();
+                try {
+                    sleep(3000);
+                    Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                    startActivity(intent);
+                    finish();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
-        }, secondsDelayed * 1000);
+        };
+        myThread.start();
     }
 }

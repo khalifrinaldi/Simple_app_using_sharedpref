@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main_layout"
     tools:context="com.po.majuperut.MainActivity">
 
     <ImageView
@@ -158,10 +159,21 @@
         android:id="@+id/login_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/already_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/login_text"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/already_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignTop="@+id/register_button"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="103dp"
-        android:text="@string/login_text"
+        android:text="@string/already_text"
         android:textSize="15dp"
         android:textStyle="bold" />
 
