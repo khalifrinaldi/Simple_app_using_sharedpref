@@ -6,7 +6,7 @@ Jawaban pertanyaan :
 
 ====================
 
-2.
+2. ![Screenshot](https://3.bp.blogspot.com/-dB5f6GGSSGs/WI8aL87slwI/AAAAAAAAAdI/le5Emer1TnwG9AfvzDlS6m_bHNFqI_mDACLcB/s1600/activity_lifecycle.png)
 
 ====================
 
