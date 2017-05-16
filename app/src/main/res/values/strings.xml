@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">MajuPerut</string>
+    <string name="name_user">Username</string>
+    <string name="title_main">PO. MAJU PERUT</string>
+    <string name="email_user">E-Mail</string>
+    <string name="register_text">Please fill this form first</string>
+    <string name="password_user">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="title_menu">Hello</string>
+    <string name="origin_text">Origin</string>
+    <string name="dest_text">Destination</string>
+    <string name="bus_type">Bus Class</string>
+    <string name="date_type">Date</string>
+    <string name="loc_prompt">Choose Location</string>
+    <string name="bus_prompt">Choose Class</string>
+    <string name="login_text">Sign In</string>
+    <string-array name="location">
+        <item>Jakarta</item>
+        <item>Yogyakarta</item>
+        <item>Bandung</item>
+        <item>Bali</item>
+        <item>Surabaya</item>
+        <item>Bekasi</item>
+        <item>Solo</item>
+        <item>Semarang</item>
+    </string-array>
+    <string-array name="bus_class">
+        <item>Economy</item>
+        <item>Business</item>
+        <item>Executive</item>
+    </string-array>
+    <string-array name="date_list">
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    </string-array>
+    <string-array name="month_list">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+    </string-array>
+    <string-array name="year_list">
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+        <item>2020</item>
+    </string-array>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/origin_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/origin_text"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_location"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/origin_text"
+        android:layout_alignBottom="@+id/origin_text"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/location" />
+
+    <TextView
+        android:id="@+id/dest_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_location"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/dest_text"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_dest"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/dest_text"
+        android:layout_alignBottom="@+id/dest_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:entries="@array/location" />
+
+    <TextView
+        android:id="@+id/bus_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_dest"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/bus_type"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_bus"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bus_type"
+        android:layout_alignBottom="@+id/bus_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:entries="@array/bus_class" />
+
+    <TextView
+        android:id="@+id/date_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_bus"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/date_type"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_date"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/date_type"
+        android:layout_marginTop="11dp"
+        android:entries="@array/date_list" />
+
+    <Spinner
+        android:id="@+id/spinner_month"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_type"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:entries="@array/month_list" />
+
+    <Spinner
+        android:id="@+id/spinner_year"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/date_type"
+        android:layout_marginTop="11dp"
+        android:entries="@array/year_list" />
+
+</RelativeLayout>
